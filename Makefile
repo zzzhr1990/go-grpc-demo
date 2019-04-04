@@ -4,23 +4,23 @@ NAME=$(shell pwd | awk -F "/" '{print $$NF}')
 SERVICE=bin/$(NAME)
 IMAGE=registry.cn-beijing.aliyuncs.com/qietv/$(NAME)
 TAG?=latest
-ENTRY=./demo.go
+ENTRY=demo.go
 
 default: build
 build:
- GOOS=$(GOOS) GOARCH=$(GOARCH) go build -o $(SERVICE) $(ENTRY)
+	GOOS=$(GOOS) GOARCH=$(GOARCH) go build -o $(SERVICE) $(ENTRY)
 linux:
- GOOS=linux GOARCH=amd64  go build -o $(SERVICE) $(ENTRY)
+	GOOS=linux GOARCH=amd64  go build -o $(SERVICE) $(ENTRY)
 darwin:
- GOOS=darwin GOARCH=amd64  go build -o $(SERVICE) $(ENTRY)
+	GOOS=darwin GOARCH=amd64  go build -o $(SERVICE) $(ENTRY)
 windows:
- GOOS=windows GOARCH=amd64  go build -o $(SERVICE) $(ENTRY)
+	GOOS=windows GOARCH=amd64  go build -o $(SERVICE) $(ENTRY)
 image: linux
- docker build --no-cache -t $(IMAGE):$(TAG) .
+	docker build --no-cache -t $(IMAGE):$(TAG) .
 push: image
- docker push $(IMAGE):$(TAG)
+	docker push $(IMAGE):$(TAG)
 clean:
- rm -rf $(SERVICE)
+	rm -rf $(SERVICE)
 run: build
- MYSQL_CONNECTION="admin:admin@tcp(localhost:3306)/jsq-user?charset=utf8mb4&parseTime=True&loc=Local" \
- ./$(SERVICE)
+	MYSQL_CONNECTION="admin:admin@tcp(localhost:3306)/jsq-user?charset=utf8mb4&parseTime=True&loc=Local" \
+	./$(SERVICE)
