@@ -2,7 +2,7 @@ GOOS=$(shell go env | grep GOOS | awk -F "=" '{print $$NF}' | awk -F "\"" '{prin
 GOARCH=$(shell go env | grep GOARCH | awk -F "=" '{print $$NF}' | awk -F "\"" '{print $$2}')
 NAME=$(shell pwd | awk -F "/" '{print $$NF}')
 SERVICE=bin/$(NAME)
-IMAGE=registry.cn-beijing.aliyuncs.com/qietv/$(NAME)
+IMAGE=registry.cn-hangzhou.aliyuncs.com/qingzhen/$(NAME)
 TAG?=latest
 ENTRY=demo.go
 
