@@ -1,4 +1,4 @@
-FROM registry.cn-beijing.aliyuncs.com/qietv/alpine-cn:3.8
+FROM ubuntu:16.04
 
 COPY bin/go-grpc-demo /go-grpc-demo
 # COPY src/swagger-ui /swagger-ui
