@@ -5,6 +5,11 @@ github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b/go.mod h1:SBH7ygxi8pfU
 github.com/golang/mock v1.1.1/go.mod h1:oTYuIxOrZwtPieC+H1uAHpcLFnEyAGVDL/k47Jfbm0A=
 github.com/golang/protobuf v1.2.0 h1:P3YflyNX/ehuJFLhxviNdFxQPkGK5cDcApsge1SqnvM=
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
+github.com/golang/protobuf v1.3.1 h1:YF8+flBXS5eO826T4nzqPrxfhQThhXl0YzfuUPu4SBg=
+github.com/golang/protobuf v1.3.1/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
+github.com/zzzhr1990/common-grpc v0.0.6 h1:YTR9rPpwjeNS4cYViCdIgtrdJGZjE44+vVomoS2MZfU=
+github.com/zzzhr1990/common-grpc/go v0.0.0-20190405092950-1757f1c8835b h1:8BW6/7yv54+tSel96fCrExaWn/WAn84lZmX8F2sLK2c=
+github.com/zzzhr1990/common-grpc/go v0.0.0-20190405092950-1757f1c8835b/go.mod h1:1vyNWgrsHUCl2TasIh25TXPcwManqsebloPbsJAqafs=
 github.com/zzzhr1990/go-grpc-common v0.0.0-20190404155517-b3211b1c02d8 h1:R1Rc6bsqkfSB/uv22QnKKRoqUcGNU3IA/o5GFbQyNvc=
 github.com/zzzhr1990/go-grpc-common v0.0.0-20190404155517-b3211b1c02d8/go.mod h1:ljhe0YXBMYU1Cm2IjwG2rmPuW0/a12hRiterFaL5lR8=
 golang.org/x/lint v0.0.0-20181026193005-c67002cb31c3/go.mod h1:UVdnD1Gm6xHRNCYTkRU2/jEulfH38KcIWyp/GAMgvoE=
